@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài học multi page Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Tạo Sản Phẩm</h1>
+    <section class="createproduct">
+        <from action="login.html" method="post">
+            <div class="content">
+                <label for="name-product">Tên sản phẩm: </label>
+                <input type="text" name="name-product"><br>
+                <label for="describe">Mô tả sản phẩm: </label><br>
+                <textarea id="describe" name="describe" rows="6"></textarea><br>
+                <label for="ngành_hàng">Ngành hàng:</label>
+                <select id="ngành_hàng" name="nghành_hàng">
+                    <option value="Thời trang">Thời trang</option>
+                    <option value="Sức khỏe">Sức khỏe</option>
+                    <option value="Phụ kiện">Phụ kiện</option>
+                    <option value="Gia dụng">Gia dụng</option>
+                    <option value="Điện thoại">Điện thoại</option>
+                    <option value="Đồng hồ">Đồng hồ</option>
+                    <option value="Thực phẩm">Thực phẩm</option>
+                    <option value="Đồ uống">Đồ uống</option>
+                </select><br>
+                <label for="cost">Giá: </label>
+                <input type="number" name="cost"><br>
+                <label for="quantity">Số lượng: </label>
+                <input type="number" name="quantity"><br>
+                <label for="freight">Phí vận chuyển: </label>
+                <input type="number" name="freight"><br>
+                <label for="tình_trạng">Tình trạng: </label>
+                <select id="tình_trạng" name="tình_trạng">
+                    <option value="new">Mới</option>
+                    <option value="old">Cũ</option>
+                </select><br><br>
+                <label for="files">Hình ảnh sản phẩm</label>
+                <input type="file" name="file[]" id="files" muitiple>
+                <br>
+            </div>
+                <div class="button">
+                    <button type="submit">Lưu</button>
+                </div>
+        </from>
+    </section>
+</body>
+
+</html>

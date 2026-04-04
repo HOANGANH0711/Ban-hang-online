@@ -1,0 +1,73 @@
+*{
+    padding:o;
+    margin:0;
+}
+:root{
+    --primary-color:rgb(13,52,97);
+}
+.createproduct{
+    background-color:rgba(198, 201, 200, 0.13);
+    width:800px;
+    height:800px;
+    margin-left:auto;
+    margin-right:100px;
+    margin-top:50px;
+    box-sizing:border-box;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px ;
+}
+label{
+    color:rgb(0, 0, 0);
+    font-size:20px;
+    margin:20px;
+}
+input,textarea,select{
+    background-color: transparent;
+    color:rgb(0, 0, 0);
+    border-radius: 5px;
+    border:1px solid rgb(201, 198, 198);
+    margin:10px;
+    padding:5px;
+    outline:none;
+}
+select{
+    background-color:black;  /* trong suốt */
+    color: rgb(0, 0, 0);    
+    background:transparent;         /* màu chữ */
+}
+h1{
+    margin-top:90px;
+    margin-right:330px;
+    color:rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-align: right;
+    padding:10px;
+
+}
+p{
+    color:rgb(0, 0, 0);
+}
+button{
+    margin-top:150px;
+    background-color:var(--primary-color);
+    border-radius: 10px;
+    color:azure;
+    padding:10px 50px;
+}
+button:hover{
+    background-color: rgb(189, 59, 8);
+}
+.button{
+    text-align: center;
+}
+.content{
+    margin-left: 30px;
+}
+body{
+    background-image:url(shopping.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+textarea{
+    width:300px;
+}
