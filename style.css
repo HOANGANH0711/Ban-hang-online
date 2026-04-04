@@ -1,17 +1,16 @@
-*{
-    padding:o;
-    margin:0;
-}
+
 :root{
     --primary-color:rgb(13,52,97);
 }
 .createproduct{
     background-color:rgba(198, 201, 200, 0.13);
-    width:800px;
+    width:100%;
+    max-width:800px;
     height:800px;
     margin-left:auto;
     margin-right:100px;
     margin-top:50px;
+    padding-top:50px;
     box-sizing:border-box;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px ;
@@ -48,7 +47,7 @@ p{
     color:rgb(0, 0, 0);
 }
 button{
-    margin-top:150px;
+    margin-top:100px;
     background-color:var(--primary-color);
     border-radius: 10px;
     color:azure;
@@ -61,12 +60,18 @@ button:hover{
     text-align: center;
 }
 .content{
-    margin-left: 30px;
+    margin:10px;
 }
 body{
     background-image:url(shopping.png);
     background-size:cover;
+    /* Phóng to/thu nhỏ ảnh để phủ kín toàn màn hình (có thể bị cắt ảnh) */
     background-repeat:no-repeat;
+    /* Không lặp lại ảnh (tránh bị nhân bản nhiều ảnh nhỏ) */
+    background-position: center;
+    /* Căn ảnh vào chính giữa (rất quan trọng để không bị lệch khi zoom) */
+    background-attachment: fixed;
+    /* Cố định ảnh nền khi scroll (tạo hiệu ứng nền đứng yên) */
 }
 textarea{
     width:300px;
